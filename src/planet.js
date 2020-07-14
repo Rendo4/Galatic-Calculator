@@ -10,9 +10,8 @@ const Planet = {
 let age = 24
 
 export function currentAge(age) {
-  let array1 = []
   for (const property in Planet) {
-     array1.push(`${property}: ${(age * 365) / Planet[property]}`);
+     array1.push(`${(age * 365) / Planet[property]}`);
   }
   return array1
 }

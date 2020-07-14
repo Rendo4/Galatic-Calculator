@@ -1,17 +1,10 @@
-import { currentAge } from "./../src/planet.js";
-const Planet = {
-  mercury: 88,
-  venus: 225,
-  earth: 365,
-  mars: 687,
-  jupiter: 4333
-}
+   import { currentAge } from "./planet.js";
 
 let age = 24
 let array1 = []
 function currentAge(age) {
   for (const property in Planet) {
-     array1.push(`${property}: ${(age * 365) / Planet[property]}`);
+     array1.push(`${(age * 365) / Planet[property]}`);
   }
   return array1
 }
@@ -24,9 +17,10 @@ const Life = {
   jupiter: 6.065081929379183
 }
 
-function expectancy (Life, array1) {
-  let die = []
-  for (const property in Life) {
-    Life[property]) - parseInt(array1[0])
- }
+function expectancy(Life, array1) {
+  planet1 = Life.mercury - array1[0];
+  planet2 = Life.venus - array1[1];
+  planet3 = Life.earth - array1[2];
+  planet4 = Life.mars - array1[3];
+  planet5 = Life.jupiter - array1[4];
 } 
