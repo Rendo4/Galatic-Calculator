@@ -7,13 +7,15 @@ const Planet = {
 };
 
 
-export let array1 = [];
-export function currentAge(age, array1) {
+let array1 = [];
+
+export function currentAge(age, array1, Planet) {
   for (const property in Planet) {
-    array1.push(`${(age * 365) / Planet[property]}`);
+    array1.push((age * 365) / Planet[property]);
   }
   return array1;
 }
+
 export function showAge(array1) {
   $(".mercury").html(array1[0]);
   $(".venus").html(array1[1]);
