@@ -17,6 +17,7 @@ This project will take an inputted age and calculate how old they are in years o
 
 ## Known Bugs
 
+not all tests currently run at this time. 
 
 ### License
 Copyright (c) 2020 **_{Ryan Rendon}_**
